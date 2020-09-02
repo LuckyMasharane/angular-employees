@@ -10,8 +10,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ,MatCardModule, MatButtonModule,
-                  MatGridListModule ],
+  imports:      [ BrowserModule, FormsModule ,MatCardModule, MatButtonModule, MatGridListModule ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })

@@ -4,9 +4,10 @@
     <title>Employees</title>
   </head>
   <body>
-    <div *ngFor ="let employees of employees">
-      <!-- <mat-grid-list cols="10" rowHeight="450px">
-        <mat-grid-tile> -->
+    <div >
+      <mat-grid-list cols="3" > 
+        <mat-grid-tile *ngFor="let employees of employees">
+
           <mat-card class="example-card">
             <img mat-card-image src={{employees.empImage}} alt={{employees.empName}}>
             <mat-card-title>{{employees.empName}} {{employees.empSurname}}</mat-card-title>
@@ -18,8 +19,8 @@
               <button mat-raised-button color="warn">Delete</button>
             </mat-card-actions>
           </mat-card>
-        <!-- </mat-grid-tile>
-      </mat-grid-list> -->
+        </mat-grid-tile>
+      </mat-grid-list>
     </div>
   </body>
 </html>
