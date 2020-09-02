@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employees</title>
+  </head>
+  <body>
+    <div *ngFor ="let employees of employees">
+      <mat-card>
+        <img mat-card-image src={{employees.empImage}} alt={{employees.empName}}>
+        <mat-card-title>{{employees.empName}} {{employees.empSurname}}</mat-card-title>
+        <mat-card-subtitle>
+          {{employees.empPosition}} , {{employees.empAge}} years
+        </mat-card-subtitle>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Update</button>
+          <button mat-raised-button color="warn">Delete</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+  </body>
+</html>
