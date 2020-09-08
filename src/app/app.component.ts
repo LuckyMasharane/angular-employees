@@ -23,7 +23,7 @@ export class AppComponent  {
   {empName:"Thabo",empSurname:"Mbatha",empPosition:"Senior Developer",empAge:27,empImage:"https://images.pexels.com/photos/1445527/pexels-photo-1445527.jpeg?cs=srgb&dl=pexels-doug-bolton-1445527.jpg&fm=jpg"}]
 
    
-   openDialog(employees) {
+  openDialog(employees) {
     const dialogRef = this.dialog.open(DialogComponent,{
       data:{
         message: 'Are you sure want to delete?',
@@ -34,14 +34,13 @@ export class AppComponent  {
       }
     });
 
-       dialogRef.afterClosed().subscribe((confirmed: boolean) => {
+    dialogRef.afterClosed().subscribe((confirmed: boolean) => {
       if (confirmed) {
-      const index = this.employees.indexOf(employees,0)
-      if (index >-1) {
-        this.employees.splice(index,1);
-      }
+        const index = this.employees.indexOf(employees,0)
+        if (index >-1) {
+          this.employees.splice(index,1);
+        }
       }
     });
-     }
-
+  }
 }
