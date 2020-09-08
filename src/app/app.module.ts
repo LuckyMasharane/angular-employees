@@ -25,6 +25,6 @@ const routes: Routes = [
   declarations: [ AppComponent, HelloComponent, DialogComponent, NewEmpComponent ],
   entryComponents:[ DialogComponent ],
   bootstrap:    [ AppComponent ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
