@@ -15,8 +15,8 @@ import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,MatCardModule, MatButtonModule, MatGridListModule ],
-  entryComponents:[DialogComponent],
-  declarations: [ AppComponent, HelloComponent, NewEmpComponent ],
+  declarations: [ AppComponent, HelloComponent, DialogComponent, NewEmpComponent ],
+  entryComponents:[ DialogComponent ],
   bootstrap:    [ AppComponent ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
