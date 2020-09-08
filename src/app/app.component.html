@@ -44,7 +44,7 @@
             </mat-card-subtitle>
             <mat-card-actions>
               <button mat-raised-button color="primary">Update</button>
-              <button mat-raised-button color="warn"  type="button" data-toggle="modal" data-target="#exampleModal">Delete</button>
+              <button mat-raised-button color="warn" (click)="openDialog(employees)">Delete</button>
             </mat-card-actions>
           </mat-card>
         </mat-grid-tile>
